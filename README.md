@@ -18,6 +18,12 @@
 
 </div>
 
+## 🔥 News
+- \[2025-02\] We release the [paper](https://arxiv.org/pdf/2502.19247) of ProxyTransformation. Please check the [webpage](https://pqh22.github.io/projects/ProxyTransformation/index.html) for brief introduction!
+- \[2025-02\] Our paper was accept by CVPR2025 ! 🥳
+
+
+
 ## ⭐ Motivation
 <div style="text-align: center;">
     <img src="asset/illustrate_only_intutive.drawio.png" alt="Dialogue_Teaser" width=100% >
@@ -32,8 +38,22 @@ After reconstructing the scene point cloud from multi-view images in ego-centric
 
 In ego-centric 3D visual grounding, we first generate a uniform grid prior in space and perform an initial clustering. Each cluster is then processed by an offset network to obtain deformable offsets for the cluster centers, allowing the initial grid prior to be shifted toward more important regions and enabling clustering to capture the sub-manifold of the target region. We utilize a proxy block based on proxy attention to process multi-modal information, obtaining a transformation matrix and translation vector for each sub-manifold. This optimizes the relative positions and internal structures of the sub-manifolds, which are subsequently fed into downstream structures for feature learning and fusion, ultimately achieving precise localization of the target object in the scene.
 
+## 📝 TODO List
+
+
+- \[ \] Clean up the codebase and release our code.
+- \[ \] Upload our model weights.
+- \[ \] Full release and further updates.
+
+
+## 📚 Getting Started
+Code and scripts are coming soon... You can follow [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan/) to prepare the dataset and environment.
+
+
 ## 📦 Model & Weights
 Coming soon...
+
+
 ## 🔗 Citation
 
 If you find our work helpful, please cite:

@@ -53,6 +53,9 @@ Code and scripts are coming soon... You can follow [EmbodiedScan](https://github
 ## 📦 Model & Weights
 Coming soon...
 
+## 📬 Bugs or questions?
+
+If you have any questions related to the codes or the paper, please feel free to contact Qihang Peng (`pqh22@mails.tsinghua.edu.cn`) or open an issue.
 
 ## 🔗 Citation
 

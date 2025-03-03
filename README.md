@@ -51,7 +51,7 @@ Code and scripts are coming soon... You can follow [EmbodiedScan](https://github
 
 
 ## 📦 Model & Weights
-Coming soon...
+Coming soon......
 
 ## 📬 Bugs or questions?
 

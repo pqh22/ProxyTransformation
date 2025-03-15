@@ -41,8 +41,8 @@ In ego-centric 3D visual grounding, we first generate a uniform grid prior in sp
 ## 📝 TODO List
 
 
-- \[ \] Clean up the codebase and release our code.
-- \[ \] Upload our model weights.
+- \[x\] Clean up the codebase and release our code.
+- \[x\] Upload our model weights.
 - \[ \] Full release and further updates.
 
 

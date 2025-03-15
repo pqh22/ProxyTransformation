@@ -47,7 +47,47 @@ In ego-centric 3D visual grounding, we first generate a uniform grid prior in sp
 
 
 ## 📚 Getting Started
-Code and scripts are coming soon... You can follow [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan/) to prepare the dataset and environment.
+
+### Installation
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/pqh22/ProxyTransformation.git
+cd ProxyTransformation
+```
+
+2. Create environment and install packages
+
+```bash
+conda create -n pt python=3.8 -y
+conda activate pt
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+python install.py all
+```
+
+By the way, it's easy to encounter problems when installing Mink Engine and PyTorch3D. You can follow the official document carefully.
+
+### Data Preparation
+Please refer to [EmbodiedScan](https://github.com/OpenRobotLab/EmbodiedScan) for downloading and organization.
+
+And the enhanced detection model and augmented text for training are proposed by [DenseG](https://opendrivelab.github.io/Challenge%202024/multiview_THU-LenovoAI.pdf). If you are interested in obtaining the data for your own research or experiments, please get in touch with the authors of the relevant work.
+
+### Training and evaluation
+
+We provide some scripts for your reference.
+
+To train our grounding model with pytorch, you can run:
+
+```bash
+torchrun --nproc_per_node={NUM_NODES} tools/train.py {CONFIG} --work-dir={WORK_DIR} --launcher="pytorch"
+```
+
+To inference and evaluate the model, you can run:
+
+``` bash
+torchrun --nproc_per_node={NUM_NODES} tools/eval.py {CONFIG} --work-dir={WORK_DIR}  --launcher="pytorch" --resume {CKPT}
+```
 
 
 ## 📦 Model & Weights

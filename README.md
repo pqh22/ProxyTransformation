@@ -91,7 +91,7 @@ torchrun --nproc_per_node={NUM_NODES} tools/eval.py {CONFIG} --work-dir={WORK_DI
 
 
 ## 📦 Model & Weights
-Coming soon......
+You can download our model from my [Google Drive](https://drive.google.com/drive/folders/1dPiaKuldbIn-OX9obhOlem7SCZeGnkt-?hl=zh_CN).
 
 ## 📬 Bugs or questions?
 

@@ -777,13 +777,8 @@ class SparseFeatureFusion3DGrounderPreshape(BaseModel):
                     # len(positive_maps[i]), 1)
             
         batch_inputs_dict['text_dict'] = text_dict
-        import os
-        if os.getenv('CENTER_VIZ', '0') == '1':
-            point_feats, scores, point_xyz, new_text_dict, centers = self.extract_feat(
-                        batch_inputs_dict, batch_data_samples)
-        else:
-            point_feats, scores, point_xyz, new_text_dict = self.extract_feat(
-                        batch_inputs_dict, batch_data_samples)
+        point_feats, scores, point_xyz, new_text_dict = self.extract_feat(
+                    batch_inputs_dict, batch_data_samples)
         if new_text_dict is not None:
             text_dict = new_text_dict
         head_inputs_dict = self.forward_transformer(point_feats, scores,

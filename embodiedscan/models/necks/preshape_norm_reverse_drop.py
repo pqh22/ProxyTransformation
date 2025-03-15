@@ -509,9 +509,6 @@ def remove_points_by_index(new_points, drop_idx):
     Returns:
         torch.Tensor: Tensor of shape (B, N - M, 3) with specified points removed.
     """
-    import os
-    if os.getenv('PQH_PDB_DEBUG', '0') == '1':
-        import pdb; pdb.set_trace()
 
     filtered_points = []
     B, N, _ = new_points.shape

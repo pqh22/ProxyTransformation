@@ -132,9 +132,6 @@ class MinkResNet(BaseModule):
         Returns:
             list[ME.SparseTensor]: Output sparse tensors.
         """
-        import os
-        if os.getenv('PQH_PDB_DEBUG', '0') == '1':
-            import pdb; pdb.set_trace()
         x = self.conv1(x) # (504714, 3) -> (490054,64) 其实是这一步有问题
         x = self.norm1(x)
         x = self.relu(x)

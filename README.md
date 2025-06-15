@@ -102,6 +102,14 @@ If you have any questions related to the codes or the paper, please feel free to
 If you find our work helpful, please cite:
 
 ```bibtex
+@inproceedings{peng2025proxytransformation,
+  title={ProxyTransformation: Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding},
+  author={Peng, Qihang and Zheng, Henry and Huang, Gao},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={24582--24592},
+  year={2025}
+}
+
 @misc{peng2025proxytransformationpreshapingpointcloud,
       title={ProxyTransformation: Preshaping Point Cloud Manifold With Proxy Attention For 3D Visual Grounding}, 
       author={Qihang Peng and Henry Zheng and Gao Huang},
